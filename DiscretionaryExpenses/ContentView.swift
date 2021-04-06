@@ -9,15 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var currentMonth = ""
-    //@State private var categoryTotal = []
-    @State private var monthlyTotal = 0
+    @State private var monthlyTotal = 0.0
     
-    @State private var categories = [ "Groceries/Household",
-                                      "Dining Out",
-                                      "Entertainment",
-                                      "Shopping--Personal",
-                                      "Shopping--Home"
-                                    ]
     
     var body: some View {
         NavigationView {

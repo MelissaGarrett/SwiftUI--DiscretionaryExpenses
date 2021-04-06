@@ -11,6 +11,7 @@
 		0160D88E261BFEB3009AD795 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160D88D261BFEB3009AD795 /* ContentView.swift */; };
 		0160D890261BFEB7009AD795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0160D88F261BFEB7009AD795 /* Assets.xcassets */; };
 		0160D893261BFEB7009AD795 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0160D892261BFEB7009AD795 /* Preview Assets.xcassets */; };
+		0160D89C261D158A009AD795 /* ExpensesByCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160D89B261D158A009AD795 /* ExpensesByCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		0160D88F261BFEB7009AD795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0160D892261BFEB7009AD795 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0160D894261BFEB7009AD795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0160D89B261D158A009AD795 /* ExpensesByCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesByCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				0160D88B261BFEB3009AD795 /* DiscretionaryExpensesApp.swift */,
 				0160D88D261BFEB3009AD795 /* ContentView.swift */,
+				0160D89B261D158A009AD795 /* ExpensesByCategory.swift */,
 				0160D88F261BFEB7009AD795 /* Assets.xcassets */,
 				0160D894261BFEB7009AD795 /* Info.plist */,
 				0160D891261BFEB7009AD795 /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0160D89C261D158A009AD795 /* ExpensesByCategory.swift in Sources */,
 				0160D88E261BFEB3009AD795 /* ContentView.swift in Sources */,
 				0160D88C261BFEB3009AD795 /* DiscretionaryExpensesApp.swift in Sources */,
 			);
