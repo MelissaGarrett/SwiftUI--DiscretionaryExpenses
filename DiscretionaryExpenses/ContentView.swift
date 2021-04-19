@@ -33,13 +33,23 @@ struct ContentView: View {
     }
     
     func getCurrentMonth() {
-        let currentDate = Date()
+        let date = Date()
         let formatter = DateFormatter()
         
         formatter.dateFormat = "MMMM"
-        currentMonth = formatter.string(from: currentDate)
+        currentMonth = formatter.string(from: date)
         
-// TODO: if 1st, reset category and monthly totals
+        formatter.dateFormat = "dd"
+        let currentDay = formatter.string(from: date)
+        if Int(currentDay) == 1 {
+            monthlyTotal = 0.0
+            
+            //TODO: reset category totals
+        }        
+    }
+    
+    func getMonthlyTotal() {
+        
     }
 }
 
