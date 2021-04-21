@@ -13,6 +13,7 @@
 		0160D893261BFEB7009AD795 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0160D892261BFEB7009AD795 /* Preview Assets.xcassets */; };
 		0160D89C261D158A009AD795 /* ExpensesByCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160D89B261D158A009AD795 /* ExpensesByCategory.swift */; };
 		0160D89F261D23E2009AD795 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160D89E261D23E2009AD795 /* AddExpenseView.swift */; };
+		0160D8E1262FB19F009AD795 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160D8E0262FB19E009AD795 /* Expenses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0160D894261BFEB7009AD795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0160D89B261D158A009AD795 /* ExpensesByCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesByCategory.swift; sourceTree = "<group>"; };
 		0160D89E261D23E2009AD795 /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		0160D8E0262FB19E009AD795 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0160D88B261BFEB3009AD795 /* DiscretionaryExpensesApp.swift */,
 				0160D88D261BFEB3009AD795 /* ContentView.swift */,
 				0160D89E261D23E2009AD795 /* AddExpenseView.swift */,
+				0160D8E0262FB19E009AD795 /* Expenses.swift */,
 				0160D89B261D158A009AD795 /* ExpensesByCategory.swift */,
 				0160D88F261BFEB7009AD795 /* Assets.xcassets */,
 				0160D894261BFEB7009AD795 /* Info.plist */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0160D8E1262FB19F009AD795 /* Expenses.swift in Sources */,
 				0160D89C261D158A009AD795 /* ExpensesByCategory.swift in Sources */,
 				0160D88E261BFEB3009AD795 /* ContentView.swift in Sources */,
 				0160D88C261BFEB3009AD795 /* DiscretionaryExpensesApp.swift in Sources */,

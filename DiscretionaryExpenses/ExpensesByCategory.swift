@@ -8,7 +8,7 @@
 import Foundation
 
 struct ExpensesByCategory : Codable {
-    var expenses = [
+    var expenseCategories = [
         "Groceries/Household" : 0.0,
         "Dining Out"          : 0.0,
         "Entertainment"       : 0.0,

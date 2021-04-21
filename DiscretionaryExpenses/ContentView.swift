@@ -10,26 +10,32 @@ import SwiftUI
 struct ContentView: View {
     @State private var currentMonth = ""
     @State private var monthlyTotal = 0.0
-    
-    
+    @State private var showingAddExpenseView = false
+        
     var body: some View {
         NavigationView {
             Form {
+                // TODO: cat, total in column form
                 Section(header: Text("Categories")) {
                     
                 }
-                
-                Section(header: Text("Category Totals")) {
-                    
-                }
-                
+            
                 Section(header: Text("Monthly Total")) {
                     
                 }
             }
             .navigationTitle("Expenses for \(currentMonth)")
+            .navigationBarItems(trailing: Button(action: {
+                showingAddExpenseView = true
+            }) {
+                Image(systemName: "plus")
+            })
         }
         .onAppear(perform: getCurrentMonth)
+        .sheet(isPresented: $showingAddExpenseView) {
+            // pass model
+            AddExpenseView()
+        }
     }
     
     func getCurrentMonth() {
