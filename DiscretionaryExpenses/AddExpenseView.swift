@@ -24,9 +24,16 @@ struct AddExpenseView: View {
                 }
             }
             .navigationTitle("Add Expense")
-            .navigationBarItems(trailing:
-                Button("Save") {
-                    // Save amount to category using model
+            .navigationBarItems(leading:
+                HStack {
+                    Button("Cancel") {
+                        
+                    }
+                }, trailing:
+                HStack {
+                    Button("Save") {
+                        
+                    }
                 }
             )
         }

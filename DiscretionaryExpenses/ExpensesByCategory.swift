@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct ExpensesByCategory : Codable {
+struct ExpensesByCategory : Codable, Identifiable {
+    var id = UUID()
+    
     var expenseCategories = [
         "Groceries/Household" : 0.0,
         "Dining Out"          : 0.0,

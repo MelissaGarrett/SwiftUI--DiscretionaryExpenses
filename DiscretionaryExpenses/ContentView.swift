@@ -11,17 +11,22 @@ struct ContentView: View {
     @State private var currentMonth = ""
     @State private var monthlyTotal = 0.0
     @State private var showingAddExpenseView = false
-        
+    
+    @ObservedObject var catExpenses = Expenses()
+
     var body: some View {
         NavigationView {
-            Form {
-                // TODO: cat, total in column form
+            Form { // to attach the nav stuff
                 Section(header: Text("Categories")) {
-                    
+                    List {
+                        HStack {
+                            Text("")
+                        }
+                    }
                 }
-            
+        
                 Section(header: Text("Monthly Total")) {
-                    
+                    Text("")
                 }
             }
             .navigationTitle("Expenses for \(currentMonth)")
@@ -29,7 +34,7 @@ struct ContentView: View {
                 showingAddExpenseView = true
             }) {
                 Image(systemName: "plus")
-            })
+                })
         }
         .onAppear(perform: getCurrentMonth)
         .sheet(isPresented: $showingAddExpenseView) {
